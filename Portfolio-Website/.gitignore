@@ -26,3 +26,12 @@ dist-ssr
 
 backup/
 .env
+
+# TypeScript incremental cache (regenerated on build)
+*.tsbuildinfo
+
+# Local scratch
+ts_errors.txt
+
+# TestSprite / generated tests (not needed for deploy; tmp may contain secrets)
+testsprite_tests/
