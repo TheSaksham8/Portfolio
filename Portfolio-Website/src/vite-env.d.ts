@@ -1,9 +1,10 @@
 /// <reference types="vite/client" />
 
 /**
- * gsap-trial ships SplitText as JS only (no .d.ts). Ambient types for CI / Vercel `tsc -b`.
+ * SplitText / ScrollSmoother are shipped as JS-only modules in some GSAP npm variants.
+ * Ambient types so Vercel `tsc -b` doesn't fail on missing declaration files.
  */
-declare module 'gsap-trial/SplitText' {
+declare module 'gsap/SplitText' {
   import type { TweenTarget } from 'gsap';
 
   export class SplitText {
